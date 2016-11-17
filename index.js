@@ -15,12 +15,7 @@ function malta_coffeescript(o, options) {
 		msg,
 		dir = path.dirname(o.name),
 		oldname = o.name,
-		pluginName = path.basename(path.dirname(__filename)),
-		doErr = function (e) {
-			console.log(('[ERROR on ' + o.name + ' using ' + pluginName + '] :').red());
-			console.dir(e);
-			self.stop();
-		};
+		pluginName = path.basename(path.dirname(__filename));
 
 	return function (solve, reject){
 		try {
@@ -34,7 +29,7 @@ function malta_coffeescript(o, options) {
 				self.notifyAndUnlock(start, msg);
 			});
 		} catch (err) {
-			doErr(err);
+			self.doErr(err, o, pluginName);
 		}
 	};
 }
