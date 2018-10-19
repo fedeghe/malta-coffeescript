@@ -24,7 +24,7 @@ function malta_coffeescript(o, options) {
 				o.name = o.name.replace(/\.coffee$/, '.js');
 				o.content = fs.readFileSync(o.name) + "";
 				msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name;
-				fs.unlink(oldname);
+				fs.unlink(oldname, () => {});
 				solve(o);
 				self.notifyAndUnlock(start, msg);
 			});
