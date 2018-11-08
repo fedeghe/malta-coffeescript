@@ -21,8 +21,8 @@
     "url": "https://github.com/fedeghe/malta-coffeescript/issues"
   },
   "dependencies": {
-    "coffee": "^3.3.0",
-    "malta": ">=3.8.3"
+    "coffee": "^3.3.3",
+    "malta": ">=3.8.14"
   },
   "main": "./index.js"
 }
