@@ -1,11 +1,11 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-coffeescript.svg)](http://badge.fury.io/js/malta-coffeescript)
-[![Dependencies](https://david-dm.org/fedeghe/malta-coffeescript.svg)](https://david-dm.org/fedeghe/malta-coffeescript)
 [![npm downloads](https://img.shields.io/npm/dt/malta-coffeescript.svg)](https://npmjs.org/package/malta-coffeescript)
 [![npm downloads](https://img.shields.io/npm/dm/malta-coffeescript.svg)](https://npmjs.org/package/malta-coffeescript)  
 ---  
 
 This plugin can be used on: **.coffee** files  
+needs `coffee` to be available in the comend line.  
 
 Sample usage:  
 ```
